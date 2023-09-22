@@ -1,4 +1,4 @@
 async function Page() {
-  return <main>dashboard home page</main>;
+  return <main>themes page</main>;
 }
 export default Page;

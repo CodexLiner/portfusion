@@ -59,7 +59,7 @@
   }
 
   .topbar {
-    @apply fixed top-0 z-30 flex w-full items-center justify-between bg-dark-2 px-6 py-3;
+    @apply fixed top-0 z-30 flex flex-row-reverse w-full items-center justify-between bg-white px-6 py-3;
   }
 
   .bottombar {
@@ -75,11 +75,11 @@
   }
 
   .leftsidebar {
-    @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto border-r border-r-dark-4 bg-dark-2 pb-5 pt-28 max-md:hidden;
+    @apply sticky left-0 top-0 z-20 flex h-screen w-1/4 flex-col justify-between overflow-auto border-r border-r-dark-4 bg-primary-500 pb-5 pt-28 max-md:hidden;
   }
 
   .leftsidebar_link {
-    @apply relative flex justify-start gap-4 rounded-lg p-4;
+    @apply relative flex justify-start gap-4 rounded-lg p-4 border-solid border border-white;
   }
 
   .pagination {

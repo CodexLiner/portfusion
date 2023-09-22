@@ -79,7 +79,7 @@
   }
 
   .leftsidebar_link {
-    @apply relative flex justify-start gap-4 rounded-lg p-4 border-solid border border-white;
+    @apply relative flex justify-start gap-4 rounded-lg p-4 border-solid border border-slate-600;
   }
 
   .pagination {

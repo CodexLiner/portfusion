@@ -27,8 +27,8 @@ function Leftbar() {
             >
               <Image src={link.icon} alt={link.label} width={20} height={20} />
               <p
-                className={`text-light-1 max-lg:hidden ${
-                  isActive && "text-dark-1"
+                className={`max-lg:hidden ${
+                  isActive ? "text-dark-1" : "text-light-1"
                 }`}
               >
                 {link.label}

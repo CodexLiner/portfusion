@@ -12,13 +12,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>
         <Topbar />
-        </header>
-        <Leftbar />
-       
-
         <main className="flex">
+          <Leftbar />
           <section className="main-container bg-white">
             <div className="w-flex max-w-4xl">{children}</div>
           </section>

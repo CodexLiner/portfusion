@@ -9,7 +9,9 @@ app.use(bodyParser.json());
 
 
 const routes = require('./src/Routes/Route');
+const otpRoutes = require('./src/Routes/otpRoute');
 app.use('/', routes);
+app.use('/otp', otpRoutes);
 
 //db conection 
 // mongoose.connect(process.env.DB, () => {

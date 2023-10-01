@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.24.1",
+    "@types/styled-components": "^5.1.28",
+    "styled-components": "^6.0.8",
     "tailwindcss-animate": "^1.0.7"
   }
 }

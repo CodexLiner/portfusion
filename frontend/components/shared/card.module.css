@@ -1,0 +1,18 @@
+
+.card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 4px;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .cardContent {
+    margin-top: 16px;
+  }
+  
+  
+  

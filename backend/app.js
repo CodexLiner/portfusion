@@ -12,8 +12,8 @@ const routes = require('./src/Routes/Route');
 app.use('/', routes);
 
 //db conection 
-// mongoose.connect(process.env.DB, () => {
-//   console.log("db connected!");
-// });
+mongoose.connect(process.env.DB, () => {
+    console.log("Database Connected!");
+});
 // server start
 app.listen(port, () => console.log(`App listening on port ${port}!`));

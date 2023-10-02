@@ -1,6 +1,5 @@
 const { HEADER, OTP_TEMPLATE, API_URL } = require('../utils/Constants')
 const axios = require('axios')
-
 class functions {
     // function for generating random otp
     static generateOTP() {
@@ -17,7 +16,7 @@ class functions {
             const message = encodeURIComponent(`${otp} ${OTP_TEMPLATE}`);
             const apiUrl = `${API_URL}apikey=${process.env.TEXTTOLOCALKEY}&numbers=91${mobile}&message=${message}&sender=${HEADER}`;
             const response = await axios.get(apiUrl);
-            console.log(response.data);
+            //if otp already exist in database 
             return response.data
         } catch (error) {
             console.error('Error sending OTP:', error);

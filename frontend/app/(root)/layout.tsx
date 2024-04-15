@@ -1,9 +1,8 @@
-import { ClerkProvider } from "@clerk/nextjs";
 import "../globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Open_Sans } from "next/font/google";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+const open = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfusion",
@@ -16,10 +15,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    </ClerkProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body className={open.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          storageKey="portfusion_theme"
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }
